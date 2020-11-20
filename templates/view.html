@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Full Employee Data</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+</style>	
+</head>  
+<body style="text-align:center;">
+  
+<h3>Employee Information</h3>  
+<table border="5" class="center">  
+    <thead>  
+        <td>ID</td>  
+        <td>Name</td> 
+		<td>Address</td>
+        <td>DOB</td>  
+        <td>Mobile Number</td>  
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["empID"]}}</td>  
+            <td>{{row["empName"]}}</td>  
+            <td>{{row["empAddress"]}}</td>  
+            <td>{{row["empDOB"]}}</td>
+			<td>{{row["empMobileNumber"]}}</td>			
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/admin">Go back to admin panel</a>  
+  
+</body>  
+</html>  

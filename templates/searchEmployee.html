@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static',filename='styles/main.css') }}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<div class="main-w3layouts wrapper">
+		<h1>Employee Search</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+			<form action="/search_result" method="POST">
+	<input type="text" name="search_term" placeholder="Search.." required>
+	<center>
+	<select name="searchType" id="searchType">
+		<option value="eid">ID</option>
+		<option value="name">Name</option>
+		<option value="age">Age</option>
+	</select>
+	</center>
+	<input type="submit" value="Search">
+</form>
+
+<br>
+<form action="/searchByFirstLetter" method="POST">
+<p>Show all employees with names starting with: </p>
+	<center><select name="nameStart" id="nameStart"></select></center>
+		<input type="submit" value="Go">
+</form>
+
+<script>
+var options = "";
+var c = undefined;
+for(var a = 65 ; a < 91; a++){
+	c = String.fromCharCode(a);
+   options += "<option>"+ c +"</option>";
+}
+document.getElementById("nameStart").innerHTML = options;
+</script>
+			<p><a href="/registerEmployee"> Register an employee</a></p>
+			</div>
+		</div>
+		</div>
+</body>
+</html>

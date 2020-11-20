@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Results</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static',filename='styles/main.css') }}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+#broad {width:70%;}
+
+thead{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #82d655;
+  color: black;
+}
+</style>
+</head>
+<body>
+<div class="main-w3layouts wrapper">
+		<h1> Status: {{msg}} </h1>
+	<div class="main-agileinfo" id="broad">
+	<div class="agileits-top">
+	{% if rows|length != 0 %}
+	<div class="w3-container">
+	<table class="w3-table w3-white w3-hoverable w3-striped"> 
+    <thead>  
+        <td>ID</td>  
+        <td>Name</td> 
+		<td>Address</td>
+        <td>DOB</td>  
+        <td>Mobile Number</td>  
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["empID"]}}</td>  
+            <td>{{row["empName"]}}</td>  
+            <td>{{row["empAddress"]}}</td>  
+            <td>{{row["empDOB"]}}</td>
+			<td>{{row["empMobileNumber"]}}</td>			
+        </tr>  
+    {% endfor %}  
+</table> 
+	{% endif %} 
+<br><br>  
+
+  <p><a href="/searchEmployee"> Search another employee</a></p>
+  <p><a href="/registerEmployee">Register an employee</a></p>
+			</div>
+		</div>
+		</div>
+</body>  
+</html>  

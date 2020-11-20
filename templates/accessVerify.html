@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static',filename='styles/main.css') }}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<div class="main-w3layouts wrapper">
+		<h1>Please Enter Access Key</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+			<form action="/admin" method="POST">
+	<input type="password" name="key" required>
+	<input type="submit" value="ENTER">
+</form>
+			<p><a href="/"> Go to home page</a></p>
+			</div>
+		</div>
+		</div>
+</body>
+</html>

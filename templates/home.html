@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static',filename='styles/main.css') }}" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+	<div class="main-w3layouts wrapper">
+		<h1>Welcome, {{ name }}</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<input type="submit" onclick="window.location='/registerEmployee';" value="Register New Employee">
+				<input type="submit" onclick="window.location='/searchEmployee';" value="Search Existing Employee">
+				<input type="submit" onclick="window.location='/accessVerify';" value="Admin Panel">
+				<form action="/logout" method="POST">
+				<input type="submit" value="Logout">
+				</form>
+			</div>
+		</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static',filename='styles/main.css') }}" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+	<div class="main-w3layouts wrapper">
+		<h1>Employee Registration</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action = "/result" method = "POST">
+					<input class="text" type="text" name="eid" placeholder="Employee ID" required>
+					<input class="text" type="text" name="name" placeholder="Employee Name" required>
+					<input class="text" type="text" name="address" placeholder="Address" required>
+					<input class="date" type="date" name="dob" placeholder="Date Of Birth" required>
+					<input class="text" type="text" name="mobile" placeholder="Mobile Number"  required>
+					
+					<input type="submit" value="REGISTER">
+				</form>
+				<p><a href="/searchEmployee">Search existing employees</a></p> 
+			</div>
+		</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="{{ url_for('static',filename='styles/main.css') }}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<div class="main-w3layouts wrapper">
+		<h1>Employee Deletion</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+			<form action="/delete" method="POST">
+	<input type="text" name="eid" placeholder="ID" required>
+	<input type="text" name="name" placeholder="Name (Case Sensitive)" required>
+	
+	<input type="submit" value="PROCEED">
+</form>
+			<p><a href="/admin"> Go back to admin panel </a></p>
+			</div>
+		</div>
+		</div>
+</body>
+</html>
