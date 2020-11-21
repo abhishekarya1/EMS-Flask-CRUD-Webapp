@@ -6,9 +6,10 @@ A simple CRUD webapp built with Flask and sqlite3.
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" width="300px"> &emsp;&ensp;
 <img src="https://cdn.worldvectorlogo.com/logos/heroku.svg" width="75px">
 </span>
+
 <br>
 
-Demo: https://ems-beta.herokuapp.com
+**Demo:** https://ems-beta.herokuapp.com
 
 ### Setup
 1. Activate virtual environment
