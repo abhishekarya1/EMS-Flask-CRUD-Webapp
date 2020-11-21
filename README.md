@@ -32,5 +32,6 @@ $ python app.py
 - Advanced jinja2 Templating
 - Blueprints
 - Built-in Testing
+- Migrating to PostgreSQL
 - Flask Extensions and Libraries
 - REST APIs with Flask
