@@ -2,8 +2,8 @@
 A simple CRUD webapp built with Flask and sqlite3.
 
 <span style="display:inline-block;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" width="300px">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"> &emsp;&ensp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" width="300px"> &emsp;&ensp;
 <img src="https://cdn.worldvectorlogo.com/logos/heroku.svg" width="75px">
 </span>
 <br>
