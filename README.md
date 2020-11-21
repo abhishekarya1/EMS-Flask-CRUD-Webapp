@@ -7,10 +7,6 @@ A simple CRUD webapp built with Flask and sqlite3.
 <img src="https://cdn.worldvectorlogo.com/logos/heroku.svg" width="75px">
 </span>
 
-<br>
-
-**Demo:** https://ems-beta.herokuapp.com
-
 ### Setup
 1. Activate virtual environment
 ```
@@ -36,3 +32,6 @@ $ python app.py
 - Migrating to PostgreSQL
 - Flask Extensions and Libraries
 - REST APIs with Flask
+
+### Demo
+**Link:** https://ems-beta.herokuapp.com
