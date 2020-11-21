@@ -7,7 +7,7 @@ A simple CRUD webapp built with Flask and sqlite3.
 <img src="https://cdn.worldvectorlogo.com/logos/heroku.svg" width="75px">
 </span>
 
-<br><br>
+<br>
 
 **Demo:** https://ems-beta.herokuapp.com
 
